@@ -6,11 +6,20 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-<bean id="d" class="org.tnsif.autowiredexample.Desel"/>
-<bean id="car" class="org.tnsif.autowiredexample.Car" autowire="constructor">
+<context:annotation-config/>
 
-
+<bean id="c1" class="org.tnsif.usingautowireannotation.Cell">
+<property name=" company" value="EVERYDAY"/>
+<property name=" size" value="SMALL"/>
 </bean>
+
+<bean id="c2" class="org.tnsif.usingautowireannotation.Cell">
+<property name=" company" value="NIPPO"/>
+<property name=" size" value="LARGE"/>
+</bean>
+
+
+
 
 
 </beans>

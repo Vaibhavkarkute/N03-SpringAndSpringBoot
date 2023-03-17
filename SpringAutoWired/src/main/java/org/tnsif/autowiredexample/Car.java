@@ -9,13 +9,22 @@ public class Car {
 
 	//DI using Setters
 	
-	public void setD(Desel d) {
+	/*public void setD(Desel d) {
 		this.d = d;
-	}
+	}*/
+	
 	
 	//Injecting the Object of Desel
 	public void accept()
 	{
 		d.Engine();
+	}
+
+
+	public Car(Desel d) {
+		super();
+		this.d=d;
+		System.out.println("Autowire Using Constructor");
+		
 	}
 }

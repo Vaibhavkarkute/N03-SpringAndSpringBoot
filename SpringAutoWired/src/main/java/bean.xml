@@ -6,8 +6,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-<bean id="desel" class="org.tnsif.autowiredexample.Desel"/>
-<bean id="car" class="org.tnsif.autowiredexample.Car" autowire="byType">
+<bean id="d" class="org.tnsif.autowiredexample.Desel"/>
+<bean id="car" class="org.tnsif.autowiredexample.Car" autowire="constructor">
 
 
 </bean>
